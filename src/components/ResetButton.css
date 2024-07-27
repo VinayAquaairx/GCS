@@ -1,0 +1,19 @@
+.reset-button {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.7);
+    cursor: pointer;
+    position: absolute;
+    bottom: 105px; /* Adjust this value as needed */
+    right: 12px; /* Adjust this value as needed */
+    z-index: 1000; /* Ensure it's above other map controls */
+    width: 30px;
+    height: 30px;
+    align-content: center;
+    text-align: center;
+  }
+  
+  .reset-button:hover {
+    background-color: #f0f0f0;
+  }

@@ -1,0 +1,123 @@
+.map-body {
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+.map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.map-body .map-icon-container {
+    position: fixed;
+    width: auto;
+    right: 30px;
+    top: 65px;
+    display: grid;
+    grid-template-rows: repeat(6, 48px);
+    gap: 25px;
+}
+
+.map-icon-container .database-btn,
+.map-icon-container .plan-btn,
+.map-icon-container .takeoff-btn,
+.map-icon-container .return-btn,
+.map-icon-container .camera-btn,
+.map-icon-container .sonar-btn {
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    color: #004C82;
+    align-content: center;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.map-icon-container .card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+.map-icon-container .database-btn:hover {
+    background-color: #004C82;
+    color: white;
+}
+.map-icon-container .plan-btn:hover {
+    background-color: #65A9E0;
+    color: white;
+}
+.map-icon-container .takeoff-btn:hover {
+    background-color: #4caf50;
+    color: white;
+}
+.map-icon-container .return-btn:hover {
+    background-color: #ff2222;
+    color: white;
+}
+.map-icon-container .sonar-btn:hover {
+    background-color: #066D10;
+    color: white;
+}
+.map-icon-container .camera-btn:hover {
+    background-color: #004C82;
+    color: white;
+}
+
+  .symbol {
+    margin-top: 13px;
+    font-size: 1.5rem;
+  }
+  
+  .database {
+    font-size: 0.9rem;
+    color: #000000;
+    position: relative;
+    top: 8px;
+    font-weight: 700;
+    right: 20px;
+  }
+  .plan {
+    font-size: 0.9rem;
+    color: #000000;
+    position: relative;
+    top: 8px;
+    font-weight: 700;
+  }
+  .takeoff {
+    font-size: 0.9rem;
+    color: #000000;
+    position: relative;
+    top: 8px;
+    font-weight: 700;
+    right: 9px;
+  }
+  .return {
+    font-size: 0.9rem;
+    color: #000000;
+    position: relative;
+    top: 8px;
+    font-weight: 700;
+    right: 6px;
+  }
+  .sonar {
+    font-size: 0.9rem;
+    color: #000000;
+    position: relative;
+    top: 8px;
+    font-weight: 700;
+    right: 1px;
+  }
+  .camera {
+    font-size: 0.9rem;
+    color: #000000;
+    position: relative;
+    top: 8px;
+    font-weight: 700;
+    right: 7px;
+  }
