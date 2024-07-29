@@ -1,0 +1,117 @@
+.userprofile-parent {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .profile-card {
+    background-color: #e3f2fd;
+    padding: 20px;
+    height: 30vh;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .profile-card h6 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border: 1px solid red;
+  }
+
+  .second-half{
+    display: flex;
+    
+    border: 1px solid red; }
+  
+  .profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-photo input {
+    display: none;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .text-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 48%;
+    margin-right: 4%;
+  }
+  
+  .text-field:nth-child(2n) {
+    margin-right: 0;
+  }
+  
+  .text-field label {
+    width: 120px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .text-field input {
+    width: calc(100% - 130px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .icon-button {
+    cursor: pointer;
+    color: #1976d2;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .edit-button, .save-button {
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .edit-button:hover, .save-button:hover {
+    background-color: #0d47a1;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
