@@ -7,8 +7,11 @@ import { Link } from 'react-router-dom';
 import { CgLogOut } from "react-icons/cg";
 import { AiFillControl } from "react-icons/ai";
 import { BiSolidUserAccount } from "react-icons/bi";
+import { useNavigate } from 'react-router-dom';
 
 function Topbar() {
+
+  const navigate = useNavigate();
   const [showOptions, setShowOptions] = useState(false);
 
   const toggleOptions = () => {
@@ -49,7 +52,7 @@ function Topbar() {
         {showOptions && (
           <div className='topbar-options'>
             <div className='topbar-manage-proj-btn' title='MANAGE PROJECT'><AiFillControl /></div>
-            <div className='topbar-profile-btn' title='PROFILE'><BiSolidUserAccount /></div>
+            <div className='topbar-profile-btn' title='PROFILE' onClick={()=>navigate('/userprofile')}><BiSolidUserAccount /></div>
             <Link className='topbar-logout-btn' to="/" title='LOGOUT'><CgLogOut /></Link>
           </div>
         )}
